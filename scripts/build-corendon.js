@@ -92,16 +92,16 @@ function pickImage(images) {
 
   // Price caps per land (pas aan)
   const COUNTRY_PRICE_CAPS = {
-    "Spanje": 600,
-    "Griekenland": 650,
-    "Turkije": 700,
-    "Portugal": 650,
+    Spanje: 600,
+    Griekenland: 650,
+    Turkije: 700,
+    Portugal: 650,
     "Italië": 650,
-    "Egypte": 800,
+    Egypte: 800,
   };
   const DEFAULT_CAP = 700;
 
-  // Maak thin dataset met country + departure
+  // Thin dataset met extra velden
   const thin = products
     .map((p) => {
       const props = p.properties || {};
@@ -113,12 +113,18 @@ function pickImage(images) {
       const currency = String(p.price?.currency || "EUR");
 
       const link = String(p.URL || "").trim();
-      const image = pickImage(p.images);
+      const banner = pickImage(p.images);
 
       const country = String(first(props.country) || "").trim();
       const departure = String(first(props.iataDeparture) || "").trim(); // bijv AMS
       const departureDate = String(first(props.departureDate) || "").trim();
       const duration = toNumber(first(props.duration));
+
+      // Nieuw: extra data uit properties
+      const stars = String(first(props.stars) || "").trim(); // vaak "3"
+      const province = String(first(props.province) || "").trim();
+      const region = String(first(props.region) || "").trim();
+      const serviceType = String(first(props.serviceType) || "").trim();
 
       return {
         id,
@@ -129,8 +135,12 @@ function pickImage(images) {
         departure,
         departureDate,
         duration,
+        stars,
+        province,
+        region,
+        serviceType,
         url: link,
-        image,
+        banner,
       };
     })
     .filter((x) => x.id && x.url);
@@ -187,5 +197,5 @@ function pickImage(images) {
     JSON.stringify(countryIndex, null, 2)
   );
 
-  console.log("Done. Wrote public/corendon/all.min.json and public/corendon/country/*");
+  console.log("Done. Updated thin fields incl stars, banner, province, region, serviceType");
 })();
