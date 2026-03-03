@@ -20,9 +20,6 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install dependencies
-        run: npm init -y && npm install csv-parse
-
       - name: Build feeds
         env:
           TT_FEED_URL: ${{ secrets.TT_FEED_URL }}
