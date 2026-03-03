@@ -10,8 +10,13 @@ function fetchUrl(url, redirectsLeft = 5) {
   return new Promise((resolve, reject) => {
     https
       .get(url, (res) => {
-        // follow redirects (TradeTracker doet dit vaak)
-        if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location && redirectsLeft > 0) {
+        // Follow redirects (TradeTracker doet dit vaak)
+        if (
+          res.statusCode >= 300 &&
+          res.statusCode < 400 &&
+          res.headers.location &&
+          redirectsLeft > 0
+        ) {
           const next = res.headers.location.startsWith("http")
             ? res.headers.location
             : new URL(res.headers.location, url).toString();
@@ -33,17 +38,28 @@ function fetchUrl(url, redirectsLeft = 5) {
   });
 }
 
-function firstDefined(obj, keys) {
-  for (const k of keys) {
-    if (obj && obj[k] !== undefined && obj[k] !== null && obj[k] !== "") return obj[k];
-  }
-  return "";
+function first(arrOrVal) {
+  if (Array.isArray(arrOrVal)) return arrOrVal[0] || "";
+  return arrOrVal || "";
 }
 
 function toNumber(v) {
   if (v === null || v === undefined) return null;
   const n = Number(String(v).replace(",", "."));
   return Number.isFinite(n) ? n : null;
+}
+
+function slugify(s) {
+  return String(s || "")
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, "_")
+    .replace(/[^a-z0-9_]+/g, "");
+}
+
+function pickImage(images) {
+  if (!Array.isArray(images) || images.length === 0) return "";
+  return images[0];
 }
 
 (async () => {
@@ -65,65 +81,111 @@ function toNumber(v) {
     process.exit(1);
   }
 
-  // TradeTracker kan array of object teruggeven
-  const items = Array.isArray(json)
-    ? json
-    : (json.items || json.products || json.productFeed || json.data || []);
-
-  if (!Array.isArray(items) || items.length === 0) {
-    console.error("No items array found. Top-level keys:", Object.keys(json || {}));
+  // Jouw feed is: { products: [...] }
+  const products = Array.isArray(json?.products) ? json.products : [];
+  if (products.length === 0) {
+    console.error("No products found. Top-level keys:", Object.keys(json || {}));
     process.exit(1);
   }
 
-  console.log("Items:", items.length);
+  console.log("Products:", products.length);
 
-  // Maak thin data, zonder enorme teksten
-  const thin = items.map((p) => {
-    const id = firstDefined(p, ["productID", "productId", "id", "sku"]);
-    const title = firstDefined(p, ["name", "title", "productName"]);
-    const price = toNumber(firstDefined(p, ["price", "currentPrice", "salePrice", "amount"]));
-    const deeplink = firstDefined(p, ["URL", "url", "deeplink", "productUrl", "link"]);
-    const image = firstDefined(p, ["imageURL", "imageUrl", "image", "image_link", "imageLink"]);
-    const dep = firstDefined(p, ["airport_departure", "departureAirport", "dep_airport", "departure"]);
-    const arr = firstDefined(p, ["airport_destination", "destinationAirport", "arr_airport", "destination"]);
+  // Price caps per land (pas aan)
+  const COUNTRY_PRICE_CAPS = {
+    "Spanje": 600,
+    "Griekenland": 650,
+    "Turkije": 700,
+    "Portugal": 650,
+    "Italië": 650,
+    "Egypte": 800,
+  };
+  const DEFAULT_CAP = 700;
 
-    return {
-      id,
-      title,
-      price,
-      url: deeplink,
-      image,
-      dep,
-      arr,
-    };
-  }).filter(x => x.id && x.url);
+  // Maak thin dataset met country + departure
+  const thin = products
+    .map((p) => {
+      const props = p.properties || {};
 
-  // Slugs (pas later aan naar jouw echte logica)
-  const weekend = thin.filter(x => x.price !== null && x.price <= 150);
-  const under100 = thin.filter(x => x.price !== null && x.price <= 100);
+      const id = String(p.ID || "").trim();
+      const title = String(p.name || "").trim();
+
+      const price = toNumber(p.price?.amount);
+      const currency = String(p.price?.currency || "EUR");
+
+      const link = String(p.URL || "").trim();
+      const image = pickImage(p.images);
+
+      const country = String(first(props.country) || "").trim();
+      const departure = String(first(props.iataDeparture) || "").trim(); // bijv AMS
+      const departureDate = String(first(props.departureDate) || "").trim();
+      const duration = toNumber(first(props.duration));
+
+      return {
+        id,
+        title,
+        price,
+        currency,
+        country,
+        departure,
+        departureDate,
+        duration,
+        url: link,
+        image,
+      };
+    })
+    .filter((x) => x.id && x.url);
+
+  // Sorteer goedkoop naar duur
+  thin.sort((a, b) => (a.price ?? 99999999) - (b.price ?? 99999999));
 
   const outBase = path.join(process.cwd(), "public", "corendon");
+  const outCountryDir = path.join(outBase, "country");
   ensureDir(outBase);
+  ensureDir(outCountryDir);
 
+  // Algemene file
   fs.writeFileSync(path.join(outBase, "all.min.json"), JSON.stringify(thin));
-  fs.writeFileSync(path.join(outBase, "weekend.json"), JSON.stringify(weekend));
-  fs.writeFileSync(path.join(outBase, "under_100.json"), JSON.stringify(under100));
 
-  const index = {
+  // Groepeer per land en schrijf per land een bestand met eigen cap
+  const byCountry = new Map();
+  for (const p of thin) {
+    const c = p.country || "Onbekend";
+    if (!byCountry.has(c)) byCountry.set(c, []);
+    byCountry.get(c).push(p);
+  }
+
+  const countryIndex = {
     last_updated: new Date().toISOString(),
-    counts: {
-      all: thin.length,
-      weekend: weekend.length,
-      under_100: under100.length,
-    },
+    caps: { ...COUNTRY_PRICE_CAPS, __default: DEFAULT_CAP },
+    countries: {},
     files: {
       all_min: "corendon/all.min.json",
-      weekend: "corendon/weekend.json",
-      under_100: "corendon/under_100.json",
+      country_index: "corendon/country/index.json",
     },
   };
 
-  fs.writeFileSync(path.join(outBase, "index.json"), JSON.stringify(index, null, 2));
+  for (const [countryName, list] of byCountry.entries()) {
+    const cap = COUNTRY_PRICE_CAPS[countryName] ?? DEFAULT_CAP;
 
-  console.log("Done. Wrote public/corendon/*.json");
+    const filtered = list
+      .filter((x) => x.price !== null && x.price <= cap)
+      .sort((a, b) => (a.price ?? 99999999) - (b.price ?? 99999999));
+
+    const fileName = `${slugify(countryName)}_under_${cap}.json`;
+    fs.writeFileSync(path.join(outCountryDir, fileName), JSON.stringify(filtered));
+
+    countryIndex.countries[countryName] = {
+      cap,
+      total: list.length,
+      under_cap: filtered.length,
+      file: `corendon/country/${fileName}`,
+    };
+  }
+
+  fs.writeFileSync(
+    path.join(outCountryDir, "index.json"),
+    JSON.stringify(countryIndex, null, 2)
+  );
+
+  console.log("Done. Wrote public/corendon/all.min.json and public/corendon/country/*");
 })();
