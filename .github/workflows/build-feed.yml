@@ -2,7 +2,8 @@ name: Build Corendon JSON feed
 
 on:
   schedule:
-    - cron: "15 3,15 * * *"
+    # Maandag en donderdag 05:15 UTC (ongeveer 06:15 NL)
+    - cron: "15 5 * * 1,4"
   workflow_dispatch: {}
 
 permissions:
