@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-13T07:22:38.575Z",
+  "last_updated": "2026-04-16T07:03:19.401Z",
   "caps": {
     "Spanje": 600,
     "Griekenland": 650,
@@ -12,39 +12,33 @@
   "countries": {
     "Nederland": {
       "cap": 700,
-      "total": 13,
+      "total": 12,
       "under_cap": 3,
       "file": "corendon/country/nederland_under_700.json"
     },
     "Turkije": {
       "cap": 700,
       "total": 642,
-      "under_cap": 413,
+      "under_cap": 442,
       "file": "corendon/country/turkije_under_700.json"
     },
     "Portugal": {
       "cap": 650,
-      "total": 146,
-      "under_cap": 77,
+      "total": 155,
+      "under_cap": 85,
       "file": "corendon/country/portugal_under_650.json"
     },
     "Spanje": {
       "cap": 600,
-      "total": 590,
-      "under_cap": 358,
+      "total": 600,
+      "under_cap": 374,
       "file": "corendon/country/spanje_under_600.json"
     },
     "Griekenland": {
       "cap": 650,
-      "total": 903,
-      "under_cap": 509,
+      "total": 906,
+      "under_cap": 528,
       "file": "corendon/country/griekenland_under_650.json"
-    },
-    "Italië": {
-      "cap": 650,
-      "total": 77,
-      "under_cap": 30,
-      "file": "corendon/country/itali_under_650.json"
     },
     "Marokko": {
       "cap": 700,
@@ -52,22 +46,28 @@
       "under_cap": 28,
       "file": "corendon/country/marokko_under_700.json"
     },
+    "Italië": {
+      "cap": 650,
+      "total": 77,
+      "under_cap": 32,
+      "file": "corendon/country/itali_under_650.json"
+    },
     "Bulgarije": {
       "cap": 700,
       "total": 63,
-      "under_cap": 53,
+      "under_cap": 52,
       "file": "corendon/country/bulgarije_under_700.json"
     },
     "Egypte": {
       "cap": 800,
-      "total": 130,
-      "under_cap": 65,
+      "total": 131,
+      "under_cap": 67,
       "file": "corendon/country/egypte_under_800.json"
     },
     "Curaçao": {
       "cap": 700,
       "total": 51,
-      "under_cap": 1,
+      "under_cap": 2,
       "file": "corendon/country/curaao_under_700.json"
     },
     "Gambia": {
