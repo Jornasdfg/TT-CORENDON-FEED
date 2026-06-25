@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T10:46:35.645Z",
+  "last_updated": "2026-06-25T08:30:50.432Z",
   "caps": {
     "Spanje": 600,
     "Griekenland": 650,
@@ -18,26 +18,26 @@
     },
     "Spanje": {
       "cap": 600,
-      "total": 664,
-      "under_cap": 460,
+      "total": 666,
+      "under_cap": 467,
       "file": "corendon/country/spanje_under_600.json"
     },
     "Griekenland": {
       "cap": 650,
-      "total": 946,
-      "under_cap": 495,
+      "total": 945,
+      "under_cap": 505,
       "file": "corendon/country/griekenland_under_650.json"
     },
     "Portugal": {
       "cap": 650,
       "total": 163,
-      "under_cap": 127,
+      "under_cap": 129,
       "file": "corendon/country/portugal_under_650.json"
     },
     "Turkije": {
       "cap": 700,
-      "total": 645,
-      "under_cap": 440,
+      "total": 644,
+      "under_cap": 439,
       "file": "corendon/country/turkije_under_700.json"
     },
     "Marokko": {
@@ -49,7 +49,7 @@
     "Italië": {
       "cap": 650,
       "total": 75,
-      "under_cap": 28,
+      "under_cap": 32,
       "file": "corendon/country/itali_under_650.json"
     },
     "Bulgarije": {
@@ -60,8 +60,8 @@
     },
     "Egypte": {
       "cap": 800,
-      "total": 158,
-      "under_cap": 84,
+      "total": 159,
+      "under_cap": 83,
       "file": "corendon/country/egypte_under_800.json"
     },
     "Duitsland": {
@@ -73,7 +73,7 @@
     "Gambia": {
       "cap": 700,
       "total": 12,
-      "under_cap": 0,
+      "under_cap": 1,
       "file": "corendon/country/gambia_under_700.json"
     },
     "Curaçao": {
@@ -112,17 +112,17 @@
       "under_cap": 0,
       "file": "corendon/country/sri_lanka_under_700.json"
     },
-    "Indonesië": {
-      "cap": 700,
-      "total": 1,
-      "under_cap": 0,
-      "file": "corendon/country/indonesi_under_700.json"
-    },
     "Thailand": {
       "cap": 700,
       "total": 1,
       "under_cap": 0,
       "file": "corendon/country/thailand_under_700.json"
+    },
+    "Indonesië": {
+      "cap": 700,
+      "total": 1,
+      "under_cap": 0,
+      "file": "corendon/country/indonesi_under_700.json"
     },
     "Vietnam": {
       "cap": 700,
