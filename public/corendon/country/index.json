@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20T08:17:45.149Z",
+  "last_updated": "2026-07-23T07:45:54.562Z",
   "caps": {
     "Spanje": 600,
     "Griekenland": 650,
@@ -18,26 +18,26 @@
     },
     "Spanje": {
       "cap": 600,
-      "total": 669,
-      "under_cap": 470,
+      "total": 672,
+      "under_cap": 469,
       "file": "corendon/country/spanje_under_600.json"
     },
     "Portugal": {
       "cap": 650,
       "total": 164,
-      "under_cap": 132,
+      "under_cap": 136,
       "file": "corendon/country/portugal_under_650.json"
     },
     "Griekenland": {
       "cap": 650,
-      "total": 949,
-      "under_cap": 482,
+      "total": 947,
+      "under_cap": 477,
       "file": "corendon/country/griekenland_under_650.json"
     },
     "Turkije": {
       "cap": 700,
-      "total": 648,
-      "under_cap": 440,
+      "total": 647,
+      "under_cap": 438,
       "file": "corendon/country/turkije_under_700.json"
     },
     "Marokko": {
@@ -48,8 +48,8 @@
     },
     "Italië": {
       "cap": 650,
-      "total": 70,
-      "under_cap": 27,
+      "total": 68,
+      "under_cap": 28,
       "file": "corendon/country/itali_under_650.json"
     },
     "Bulgarije": {
@@ -61,7 +61,7 @@
     "Egypte": {
       "cap": 800,
       "total": 163,
-      "under_cap": 95,
+      "under_cap": 97,
       "file": "corendon/country/egypte_under_800.json"
     },
     "Gambia": {
@@ -76,17 +76,17 @@
       "under_cap": 0,
       "file": "corendon/country/curaao_under_700.json"
     },
-    "Duitsland": {
-      "cap": 700,
-      "total": 7,
-      "under_cap": 0,
-      "file": "corendon/country/duitsland_under_700.json"
-    },
     "Kaapverdië": {
       "cap": 700,
       "total": 11,
       "under_cap": 0,
       "file": "corendon/country/kaapverdi_under_700.json"
+    },
+    "Duitsland": {
+      "cap": 700,
+      "total": 6,
+      "under_cap": 0,
+      "file": "corendon/country/duitsland_under_700.json"
     },
     "Bonaire": {
       "cap": 700,
@@ -94,15 +94,9 @@
       "under_cap": 0,
       "file": "corendon/country/bonaire_under_700.json"
     },
-    "China": {
-      "cap": 700,
-      "total": 1,
-      "under_cap": 0,
-      "file": "corendon/country/china_under_700.json"
-    },
     "Verenigde Staten": {
       "cap": 700,
-      "total": 5,
+      "total": 4,
       "under_cap": 0,
       "file": "corendon/country/verenigde_staten_under_700.json"
     },
