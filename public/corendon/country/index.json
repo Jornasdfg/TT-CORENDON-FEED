@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-30T07:42:21.070Z",
+  "last_updated": "2026-08-03T08:42:04.464Z",
   "caps": {
     "Spanje": 600,
     "Griekenland": 650,
@@ -12,56 +12,56 @@
   "countries": {
     "Nederland": {
       "cap": 700,
-      "total": 5,
-      "under_cap": 3,
+      "total": 4,
+      "under_cap": 2,
       "file": "corendon/country/nederland_under_700.json"
     },
     "Spanje": {
       "cap": 600,
       "total": 672,
-      "under_cap": 448,
+      "under_cap": 444,
       "file": "corendon/country/spanje_under_600.json"
     },
     "Portugal": {
       "cap": 650,
-      "total": 170,
-      "under_cap": 136,
+      "total": 171,
+      "under_cap": 139,
       "file": "corendon/country/portugal_under_650.json"
     },
     "Griekenland": {
       "cap": 650,
-      "total": 950,
-      "under_cap": 301,
+      "total": 947,
+      "under_cap": 322,
       "file": "corendon/country/griekenland_under_650.json"
     },
     "Turkije": {
       "cap": 700,
       "total": 649,
-      "under_cap": 373,
+      "under_cap": 382,
       "file": "corendon/country/turkije_under_700.json"
     },
     "Marokko": {
       "cap": 700,
       "total": 30,
-      "under_cap": 30,
+      "under_cap": 29,
       "file": "corendon/country/marokko_under_700.json"
     },
     "Italië": {
       "cap": 650,
-      "total": 67,
-      "under_cap": 23,
+      "total": 66,
+      "under_cap": 22,
       "file": "corendon/country/itali_under_650.json"
     },
     "Egypte": {
       "cap": 800,
       "total": 164,
-      "under_cap": 95,
+      "under_cap": 94,
       "file": "corendon/country/egypte_under_800.json"
     },
     "Bulgarije": {
       "cap": 700,
-      "total": 63,
-      "under_cap": 18,
+      "total": 51,
+      "under_cap": 10,
       "file": "corendon/country/bulgarije_under_700.json"
     },
     "Gambia": {
@@ -72,21 +72,21 @@
     },
     "Duitsland": {
       "cap": 700,
-      "total": 5,
-      "under_cap": 1,
-      "file": "corendon/country/duitsland_under_700.json"
-    },
-    "Curaçao": {
-      "cap": 700,
-      "total": 48,
+      "total": 3,
       "under_cap": 0,
-      "file": "corendon/country/curaao_under_700.json"
+      "file": "corendon/country/duitsland_under_700.json"
     },
     "Kaapverdië": {
       "cap": 700,
       "total": 11,
       "under_cap": 0,
       "file": "corendon/country/kaapverdi_under_700.json"
+    },
+    "Curaçao": {
+      "cap": 700,
+      "total": 51,
+      "under_cap": 0,
+      "file": "corendon/country/curaao_under_700.json"
     },
     "Bonaire": {
       "cap": 700,
