@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-31T11:35:40.197Z",
+  "last_updated": "2026-09-03T09:49:28.036Z",
   "caps": {
     "Spanje": 600,
     "Griekenland": 650,
@@ -12,15 +12,9 @@
   "countries": {
     "Nederland": {
       "cap": 700,
-      "total": 8,
+      "total": 9,
       "under_cap": 4,
       "file": "corendon/country/nederland_under_700.json"
-    },
-    "Turkije": {
-      "cap": 700,
-      "total": 645,
-      "under_cap": 436,
-      "file": "corendon/country/turkije_under_700.json"
     },
     "Portugal": {
       "cap": 650,
@@ -30,38 +24,44 @@
     },
     "Spanje": {
       "cap": 600,
-      "total": 667,
-      "under_cap": 453,
+      "total": 661,
+      "under_cap": 445,
       "file": "corendon/country/spanje_under_600.json"
+    },
+    "Turkije": {
+      "cap": 700,
+      "total": 644,
+      "under_cap": 431,
+      "file": "corendon/country/turkije_under_700.json"
     },
     "Griekenland": {
       "cap": 650,
-      "total": 930,
-      "under_cap": 342,
+      "total": 938,
+      "under_cap": 363,
       "file": "corendon/country/griekenland_under_650.json"
     },
     "Marokko": {
       "cap": 700,
-      "total": 31,
-      "under_cap": 27,
+      "total": 30,
+      "under_cap": 26,
       "file": "corendon/country/marokko_under_700.json"
     },
     "Italië": {
       "cap": 650,
       "total": 59,
-      "under_cap": 16,
+      "under_cap": 17,
       "file": "corendon/country/itali_under_650.json"
     },
     "Egypte": {
       "cap": 800,
       "total": 167,
-      "under_cap": 103,
+      "under_cap": 96,
       "file": "corendon/country/egypte_under_800.json"
     },
     "Bulgarije": {
       "cap": 700,
-      "total": 32,
-      "under_cap": 6,
+      "total": 33,
+      "under_cap": 7,
       "file": "corendon/country/bulgarije_under_700.json"
     },
     "Gambia": {
@@ -72,7 +72,7 @@
     },
     "Curaçao": {
       "cap": 700,
-      "total": 55,
+      "total": 51,
       "under_cap": 0,
       "file": "corendon/country/curaao_under_700.json"
     },
