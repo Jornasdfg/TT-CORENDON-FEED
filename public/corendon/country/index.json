@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-24T10:00:22.139Z",
+  "last_updated": "2026-09-28T11:41:12.512Z",
   "caps": {
     "Spanje": 600,
     "Griekenland": 650,
@@ -12,56 +12,56 @@
   "countries": {
     "Nederland": {
       "cap": 700,
-      "total": 15,
+      "total": 16,
       "under_cap": 4,
       "file": "corendon/country/nederland_under_700.json"
     },
     "Spanje": {
       "cap": 600,
-      "total": 640,
-      "under_cap": 464,
+      "total": 639,
+      "under_cap": 465,
       "file": "corendon/country/spanje_under_600.json"
     },
     "Portugal": {
       "cap": 650,
-      "total": 171,
-      "under_cap": 141,
+      "total": 172,
+      "under_cap": 143,
       "file": "corendon/country/portugal_under_650.json"
     },
     "Griekenland": {
       "cap": 650,
-      "total": 926,
-      "under_cap": 372,
+      "total": 900,
+      "under_cap": 414,
       "file": "corendon/country/griekenland_under_650.json"
     },
     "Turkije": {
       "cap": 700,
-      "total": 643,
-      "under_cap": 437,
+      "total": 642,
+      "under_cap": 469,
       "file": "corendon/country/turkije_under_700.json"
-    },
-    "Groot-Brittannie": {
-      "cap": 700,
-      "total": 3,
-      "under_cap": 3,
-      "file": "corendon/country/grootbrittannie_under_700.json"
     },
     "Marokko": {
       "cap": 700,
-      "total": 30,
-      "under_cap": 25,
+      "total": 28,
+      "under_cap": 23,
       "file": "corendon/country/marokko_under_700.json"
+    },
+    "Groot-Brittannie": {
+      "cap": 700,
+      "total": 2,
+      "under_cap": 2,
+      "file": "corendon/country/grootbrittannie_under_700.json"
     },
     "Egypte": {
       "cap": 800,
-      "total": 168,
-      "under_cap": 103,
+      "total": 172,
+      "under_cap": 107,
       "file": "corendon/country/egypte_under_800.json"
     },
     "Italië": {
       "cap": 650,
-      "total": 49,
-      "under_cap": 12,
+      "total": 46,
+      "under_cap": 11,
       "file": "corendon/country/itali_under_650.json"
     },
     "Bulgarije": {
@@ -73,14 +73,20 @@
     "Gambia": {
       "cap": 700,
       "total": 12,
-      "under_cap": 8,
+      "under_cap": 9,
       "file": "corendon/country/gambia_under_700.json"
     },
     "Macedonië": {
       "cap": 700,
-      "total": 3,
-      "under_cap": 2,
+      "total": 4,
+      "under_cap": 4,
       "file": "corendon/country/macedoni_under_700.json"
+    },
+    "Kaapverdië": {
+      "cap": 700,
+      "total": 12,
+      "under_cap": 2,
+      "file": "corendon/country/kaapverdi_under_700.json"
     },
     "Curaçao": {
       "cap": 700,
@@ -88,15 +94,9 @@
       "under_cap": 0,
       "file": "corendon/country/curaao_under_700.json"
     },
-    "Kaapverdië": {
-      "cap": 700,
-      "total": 12,
-      "under_cap": 0,
-      "file": "corendon/country/kaapverdi_under_700.json"
-    },
     "Duitsland": {
       "cap": 700,
-      "total": 5,
+      "total": 7,
       "under_cap": 0,
       "file": "corendon/country/duitsland_under_700.json"
     },
@@ -117,6 +117,12 @@
       "total": 1,
       "under_cap": 0,
       "file": "corendon/country/canada_under_700.json"
+    },
+    "Dominicaanse Republiek": {
+      "cap": 700,
+      "total": 1,
+      "under_cap": 0,
+      "file": "corendon/country/dominicaanse_republiek_under_700.json"
     },
     "Brazilië": {
       "cap": 700,
