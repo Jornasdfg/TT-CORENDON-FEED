@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-08T12:01:24.284Z",
+  "last_updated": "2026-10-12T13:09:42.531Z",
   "caps": {
     "Spanje": 600,
     "Griekenland": 650,
@@ -10,59 +10,35 @@
     "__default": 700
   },
   "countries": {
-    "Griekenland": {
-      "cap": 650,
-      "total": 789,
-      "under_cap": 549,
-      "file": "corendon/country/griekenland_under_650.json"
-    },
-    "Curaçao": {
-      "cap": 700,
-      "total": 56,
-      "under_cap": 36,
-      "file": "corendon/country/curaao_under_700.json"
-    },
-    "Turkije": {
-      "cap": 700,
-      "total": 640,
-      "under_cap": 553,
-      "file": "corendon/country/turkije_under_700.json"
-    },
-    "Egypte": {
-      "cap": 800,
-      "total": 175,
-      "under_cap": 117,
-      "file": "corendon/country/egypte_under_800.json"
-    },
     "Nederland": {
       "cap": 700,
-      "total": 19,
+      "total": 20,
       "under_cap": 4,
       "file": "corendon/country/nederland_under_700.json"
     },
-    "Bulgarije": {
-      "cap": 700,
-      "total": 19,
-      "under_cap": 19,
-      "file": "corendon/country/bulgarije_under_700.json"
-    },
-    "Macedonië": {
-      "cap": 700,
-      "total": 5,
-      "under_cap": 5,
-      "file": "corendon/country/macedoni_under_700.json"
-    },
     "Spanje": {
       "cap": 600,
-      "total": 635,
-      "under_cap": 477,
+      "total": 632,
+      "under_cap": 463,
       "file": "corendon/country/spanje_under_600.json"
     },
     "Portugal": {
       "cap": 650,
-      "total": 170,
-      "under_cap": 150,
+      "total": 172,
+      "under_cap": 152,
       "file": "corendon/country/portugal_under_650.json"
+    },
+    "Griekenland": {
+      "cap": 650,
+      "total": 786,
+      "under_cap": 398,
+      "file": "corendon/country/griekenland_under_650.json"
+    },
+    "Turkije": {
+      "cap": 700,
+      "total": 624,
+      "under_cap": 480,
+      "file": "corendon/country/turkije_under_700.json"
     },
     "Groot-Brittannie": {
       "cap": 700,
@@ -76,23 +52,23 @@
       "under_cap": 26,
       "file": "corendon/country/marokko_under_700.json"
     },
-    "Bonaire": {
-      "cap": 700,
-      "total": 27,
-      "under_cap": 20,
-      "file": "corendon/country/bonaire_under_700.json"
+    "Egypte": {
+      "cap": 800,
+      "total": 175,
+      "under_cap": 96,
+      "file": "corendon/country/egypte_under_800.json"
     },
     "Italië": {
       "cap": 650,
-      "total": 36,
-      "under_cap": 10,
+      "total": 31,
+      "under_cap": 8,
       "file": "corendon/country/itali_under_650.json"
     },
-    "Kaapverdië": {
+    "Bulgarije": {
       "cap": 700,
-      "total": 12,
-      "under_cap": 8,
-      "file": "corendon/country/kaapverdi_under_700.json"
+      "total": 23,
+      "under_cap": 10,
+      "file": "corendon/country/bulgarije_under_700.json"
     },
     "Gambia": {
       "cap": 700,
@@ -100,17 +76,47 @@
       "under_cap": 9,
       "file": "corendon/country/gambia_under_700.json"
     },
+    "Macedonië": {
+      "cap": 700,
+      "total": 5,
+      "under_cap": 5,
+      "file": "corendon/country/macedoni_under_700.json"
+    },
+    "Kaapverdië": {
+      "cap": 700,
+      "total": 12,
+      "under_cap": 2,
+      "file": "corendon/country/kaapverdi_under_700.json"
+    },
+    "Curaçao": {
+      "cap": 700,
+      "total": 56,
+      "under_cap": 0,
+      "file": "corendon/country/curaao_under_700.json"
+    },
     "Duitsland": {
       "cap": 700,
       "total": 9,
       "under_cap": 0,
       "file": "corendon/country/duitsland_under_700.json"
     },
+    "Bonaire": {
+      "cap": 700,
+      "total": 27,
+      "under_cap": 0,
+      "file": "corendon/country/bonaire_under_700.json"
+    },
     "Verenigde Staten": {
       "cap": 700,
       "total": 2,
       "under_cap": 0,
       "file": "corendon/country/verenigde_staten_under_700.json"
+    },
+    "Aruba": {
+      "cap": 700,
+      "total": 1,
+      "under_cap": 0,
+      "file": "corendon/country/aruba_under_700.json"
     },
     "Canada": {
       "cap": 700,
