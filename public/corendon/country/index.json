@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T13:09:42.531Z",
+  "last_updated": "2026-10-15T09:53:46.790Z",
   "caps": {
     "Spanje": 600,
     "Griekenland": 650,
@@ -12,32 +12,32 @@
   "countries": {
     "Nederland": {
       "cap": 700,
-      "total": 20,
+      "total": 21,
       "under_cap": 4,
       "file": "corendon/country/nederland_under_700.json"
     },
     "Spanje": {
       "cap": 600,
-      "total": 632,
-      "under_cap": 463,
+      "total": 641,
+      "under_cap": 479,
       "file": "corendon/country/spanje_under_600.json"
     },
     "Portugal": {
       "cap": 650,
-      "total": 172,
-      "under_cap": 152,
+      "total": 170,
+      "under_cap": 151,
       "file": "corendon/country/portugal_under_650.json"
     },
     "Griekenland": {
       "cap": 650,
-      "total": 786,
-      "under_cap": 398,
+      "total": 762,
+      "under_cap": 393,
       "file": "corendon/country/griekenland_under_650.json"
     },
     "Turkije": {
       "cap": 700,
-      "total": 624,
-      "under_cap": 480,
+      "total": 622,
+      "under_cap": 477,
       "file": "corendon/country/turkije_under_700.json"
     },
     "Groot-Brittannie": {
@@ -54,14 +54,14 @@
     },
     "Egypte": {
       "cap": 800,
-      "total": 175,
-      "under_cap": 96,
+      "total": 174,
+      "under_cap": 97,
       "file": "corendon/country/egypte_under_800.json"
     },
     "Italië": {
       "cap": 650,
-      "total": 31,
-      "under_cap": 8,
+      "total": 30,
+      "under_cap": 9,
       "file": "corendon/country/itali_under_650.json"
     },
     "Bulgarije": {
@@ -106,12 +106,6 @@
       "under_cap": 0,
       "file": "corendon/country/bonaire_under_700.json"
     },
-    "Verenigde Staten": {
-      "cap": 700,
-      "total": 2,
-      "under_cap": 0,
-      "file": "corendon/country/verenigde_staten_under_700.json"
-    },
     "Aruba": {
       "cap": 700,
       "total": 1,
@@ -141,6 +135,12 @@
       "total": 2,
       "under_cap": 0,
       "file": "corendon/country/argentini_under_700.json"
+    },
+    "Noorwegen": {
+      "cap": 700,
+      "total": 1,
+      "under_cap": 0,
+      "file": "corendon/country/noorwegen_under_700.json"
     }
   },
   "files": {
