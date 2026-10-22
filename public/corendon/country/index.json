@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19T10:45:38.943Z",
+  "last_updated": "2026-10-22T10:09:42.954Z",
   "caps": {
     "Spanje": 600,
     "Griekenland": 650,
@@ -16,29 +16,29 @@
       "under_cap": 4,
       "file": "corendon/country/nederland_under_700.json"
     },
-    "Turkije": {
-      "cap": 700,
-      "total": 618,
-      "under_cap": 493,
-      "file": "corendon/country/turkije_under_700.json"
-    },
     "Spanje": {
       "cap": 600,
-      "total": 643,
-      "under_cap": 485,
+      "total": 633,
+      "under_cap": 486,
       "file": "corendon/country/spanje_under_600.json"
     },
     "Portugal": {
       "cap": 650,
       "total": 170,
-      "under_cap": 151,
+      "under_cap": 147,
       "file": "corendon/country/portugal_under_650.json"
     },
     "Griekenland": {
       "cap": 650,
-      "total": 745,
-      "under_cap": 415,
+      "total": 725,
+      "under_cap": 417,
       "file": "corendon/country/griekenland_under_650.json"
+    },
+    "Turkije": {
+      "cap": 700,
+      "total": 614,
+      "under_cap": 486,
+      "file": "corendon/country/turkije_under_700.json"
     },
     "Groot-Brittannie": {
       "cap": 700,
@@ -54,13 +54,13 @@
     },
     "Egypte": {
       "cap": 800,
-      "total": 174,
-      "under_cap": 94,
+      "total": 172,
+      "under_cap": 95,
       "file": "corendon/country/egypte_under_800.json"
     },
     "Italië": {
       "cap": 650,
-      "total": 26,
+      "total": 17,
       "under_cap": 8,
       "file": "corendon/country/itali_under_650.json"
     },
@@ -70,17 +70,17 @@
       "under_cap": 11,
       "file": "corendon/country/bulgarije_under_700.json"
     },
+    "Gambia": {
+      "cap": 700,
+      "total": 11,
+      "under_cap": 9,
+      "file": "corendon/country/gambia_under_700.json"
+    },
     "Macedonië": {
       "cap": 700,
       "total": 7,
       "under_cap": 7,
       "file": "corendon/country/macedoni_under_700.json"
-    },
-    "Gambia": {
-      "cap": 700,
-      "total": 12,
-      "under_cap": 9,
-      "file": "corendon/country/gambia_under_700.json"
     },
     "Kaapverdië": {
       "cap": 700,
