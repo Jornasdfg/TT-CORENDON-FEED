@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-09T13:53:28.152Z",
+  "last_updated": "2026-11-12T13:45:41.016Z",
   "caps": {
     "Spanje": 600,
     "Griekenland": 650,
@@ -18,8 +18,8 @@
     },
     "Spanje": {
       "cap": 600,
-      "total": 640,
-      "under_cap": 524,
+      "total": 648,
+      "under_cap": 534,
       "file": "corendon/country/spanje_under_600.json"
     },
     "Portugal": {
@@ -30,19 +30,19 @@
     },
     "Griekenland": {
       "cap": 650,
-      "total": 762,
-      "under_cap": 492,
+      "total": 768,
+      "under_cap": 505,
       "file": "corendon/country/griekenland_under_650.json"
     },
     "Turkije": {
       "cap": 700,
-      "total": 544,
-      "under_cap": 486,
+      "total": 549,
+      "under_cap": 489,
       "file": "corendon/country/turkije_under_700.json"
     },
     "Groot-Brittannie": {
       "cap": 700,
-      "total": 5,
+      "total": 6,
       "under_cap": 4,
       "file": "corendon/country/grootbrittannie_under_700.json"
     },
@@ -55,7 +55,7 @@
     "Egypte": {
       "cap": 800,
       "total": 165,
-      "under_cap": 92,
+      "under_cap": 95,
       "file": "corendon/country/egypte_under_800.json"
     },
     "Italië": {
@@ -66,7 +66,7 @@
     },
     "Bulgarije": {
       "cap": 700,
-      "total": 43,
+      "total": 44,
       "under_cap": 15,
       "file": "corendon/country/bulgarije_under_700.json"
     },
@@ -90,8 +90,8 @@
     },
     "Cyprus": {
       "cap": 700,
-      "total": 10,
-      "under_cap": 2,
+      "total": 12,
+      "under_cap": 3,
       "file": "corendon/country/cyprus_under_700.json"
     },
     "Curaçao": {
